@@ -12,8 +12,8 @@ module.exports = {
     let queueEmbed = new MessageEmbed()
       .setTitle("Music Queue")
       .setDescription(serverQueue.songs.map((song, index) => `${index + 1}. ${song.title}`))
-      .setColor("RANDOM")
-      .setFooter("© Client Developer 2020")
+      .setColor("YELLOW")
+      .setFooter("© Lutz Nation 2020")
 
     queueEmbed.setTimestamp();
     return message.channel.send(queueEmbed);

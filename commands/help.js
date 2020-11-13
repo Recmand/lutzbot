@@ -6,12 +6,12 @@ module.exports = {
   run: async(client, msg, args) => {
      const helpembed = new discord.MessageEmbed()
      .setTitle(client.user.username + " Command List")
-     .setDescription(`The number one project of Client Developer`)
+     .setDescription(`Commands Information`)
      client.commands.map(cmd =>{
        helpembed.addField(`${cmd.name} (${cmd.alias})`, cmd.description)
      })
-     helpembed.setColor("RANDOM")
-     .setFooter("© Client Developer 2020")
+     helpembed.setColor("YELLOW")
+     .setFooter("© Lutz Nation 2020")
      msg.channel.send(helpembed);
   }
 }
